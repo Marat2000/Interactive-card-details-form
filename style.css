@@ -218,6 +218,10 @@ button:hover
 	outline:0;
 
 }
+.cardimg
+{
+	box-shadow: hsl(278, 68%, 11%,20%) .5rem 5rem 10rem;
+}
 
 
 
