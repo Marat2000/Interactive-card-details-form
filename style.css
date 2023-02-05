@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+	
+html
+{
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 18px;
+	color: hsl(0, 0%, 100%);
+	min-height:  100vh;
+	
+	
+}
+
+body
+{
+	padding: 0;
+	margin: 0;
+
+}
+
+
+.mobilebg
+{
+	display: none;
+}
+
+.desktopbg
+{
+	width: 25rem;
+	height: 100vh;
+}
+
+
+#cardfront 
+{
+	position: fixed;
+	top:8rem;
+	left:3rem;
+	z-index: 85;
+
+}
+
+
+#cardback
+{
+	z-index: 90;
+	top:22rem;
+	left:5rem;
+	position: fixed;
+}
+
+#logo
+{
+	position: fixed;
+	top:10rem;
+	left: 4rem;
+}
+
+
+#number
+{
+
+	z-index: 91;
+	top:14rem;
+	left: 5rem;
+	position: fixed;
+	font-size: 1.5rem;
+	letter-spacing: .2rem;
+}
+
+
+#name
+{
+	z-index: 92;
+	top:18rem;
+	left:5rem;
+	position: fixed;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+}
+
+
+#date
+{
+	z-index: 93;
+	top:18rem;
+	left:23rem;
+	position: fixed;
+}
+
+#cvc
+{
+	z-index: 94;
+	top:26.5rem;
+	left: 24rem;
+	position: fixed;
+	font-size: 1.3rem;
+	font-style:   italic;
+}
+
+main
+{
+	display: flex;
+}
+
+form, #thanku
+{
+	width: 21rem;
+	margin:auto;
+	color: hsl(278, 68%, 11%);
+	text-transform: uppercase;
+	font-size: .7rem;
+}
+
+#thanku
+{
+	place-items:center;
+}
+
+.error
+{
+	color:  hsl(0, 100%, 66%);
+	font-style: italic;
+	font-size: .8rem;
+	margin-top: 0;
+	text-transform: lowercase;
+	display: none;
+}
+
+.dateandcvc
+{
+	display: flex;
+	align-items: start;
+	
+}
+
+.dateinput p
+{
+	white-space: nowrap;
+}
+
+.dateinput div div
+{
+	display: flex;
+}
+
+input
+{	box-sizing: border-box;
+	font-family: inherit;
+	height: 2rem;
+	border-radius: .3rem;
+	outline: none;
+	border:hsl(279, 6%, 55%) 0.015rem solid;
+	color:hsl(278, 68%, 11%);
+	padding-left: 1rem;
+	width: 21rem;
+
+}
+
+input:focus
+{
+	border-color: hsl(278, 68%, 11%);
+	outline: hsl(278, 68%, 11%) .1rem solid;
+}
+
+
+
+.dateinput input
+{
+	width:3rem;
+	margin-right: 1rem;
+}
+
+
+.cvcinput
+{
+	margin-left: auto;
+	margin-right: 0;
+}
+
+.cvcinput input
+{
+	width: 13rem;
+
+}
+
+
+.dateinput div
+{
+	width: 7rem;
+	justify-content: space-between;
+}
+
+button
+{
+	width: 21rem;
+	text-align: center;
+	padding:.7rem 0; 
+	font-size: 1rem;
+	letter-spacing: .1rem;
+	font-family: inherit;
+	background-color: hsl(278, 68%, 11%);
+	color:hsl(0, 0%, 100%);
+	margin-top: 1rem;
+	border-radius: .5rem;
+	border:none;
+	outline-color: hsl(279, 6%, 55%);
+	outline-offset: .2rem;
+}
+
+
+button:hover
+{
+	background-color:   hsl(279, 6%, 55%);
+	letter-spacing: .2rem;
+	transition: .3s;
+	cursor: pointer;
+	outline:0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 920px)
+{
+
+main
+{
+	display: grid;
+	height: 100vh;
+}
+
+.desktopbg
+{
+	display: none;
+}
+
+.mobilebg
+{
+	display: block;
+}
+
+#cardback, #cardfront
+{
+	position: fixed;
+	
+}
+
+
+
+.cardimg
+{
+	width: 16rem;
+	
+}
+
+
+#cardback
+{
+	top: 1rem;
+	left:3rem;
+	z-index: 80;
+	
+
+}
+
+#cardfront
+{
+	top: 6rem;
+	left:1rem;
+}
+
+
+#logo
+{
+	top: 7rem;
+	width: 3rem;
+	left: 2rem;
+}
+
+#cvc
+{
+	top: 3.7rem;
+	left: 15rem;
+	font-size: 1rem;
+}
+
+#number
+{
+	top: 9rem;
+	left: 2rem;
+	font-size: .95rem;
+}
+
+#name
+{
+	top: 12rem;
+	left: 2rem;
+	font-size: .7rem;
+}
+
+#date
+{
+	top: 12rem;
+	left:12rem;
+	font-size: .7rem;
+
+}
+
+
+form
+{
+	padding:1rem; 
+
+}
+
+
+
+}
+
+
+
+
+

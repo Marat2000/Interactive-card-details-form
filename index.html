@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; color:black; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<main>
+
+  <img class="desktopbg" src="images/bg-main-desktop.png" alt="" style="height: 100vh"> 
+  <img class="mobilebg" src="images/bg-main-mobile.png" alt="" style="width: 100%"> 
+  <div id="cardfront">
+    <img id="logo" src="images/card-logo.svg" alt="">  
+    <img class="cardimg" src="images/bg-card-front.png" alt="">
+  <p id="number">0000 0000 0000 0000</p>
+  <p id="name">Jane Appleseed</p>
+  <p id="date">00/00</p>
+</div>
+<div id="cardback" >
+  <img class="cardimg" src="images/bg-card-back.png">
+ <p id="cvc"> 000</p>
+</div>
+
+<form>
+  <div class="nameinput">
+  <p>Cardholder Name</p>
+  <input placeholder="e.g. Jane Appleseed"></input>
+  <p class="error">error</p>
+</div>
+
+<div class="numberinput">
+  <p>Card Number</p>
+   <input placeholder="e.g. 1234 5678 9123 0000"></input>
+   <p class="error">error</p>
+</div>
+
+<div class="dateandcvc">
+<div class="dateinput">
+  <p>Exp. Date (MM/YY)</p>
+  <div>
+    <div>
+  <input placeholder="MM"></input>
+  <input placeholder="YY"></input>
+  </div>
+  <p class="error">error</p>
+</div>
+</div>
+
+<div class="cvcinput">
+  <p>CVC</p>
+  <input placeholder="e.g. 123"></input>
+  <p class="error">error</p>
+</div>
+</div>
+   <button type="button">Confirm</button>
+</form>
+  <!-- Completed state start -->
+
+
+<div id="thanku">
+  <img src="images/icon-complete.svg">
+  <h2>Thank you!</h2>
+  <p>We've added your card details</p>
+ <button>Continue</button>
+</div>
+
+
+
+ </main> 
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/marat2000" target="_blank">Marat Azoyan</a>.
+  </footer>
+  <script  src="main.js"></script>
+</body>
+</html>
